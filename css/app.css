@@ -289,6 +289,9 @@ section.home {
   position: relative;
   overflow: hidden;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .dishes .box-container .box .fa-heart,
@@ -323,7 +326,7 @@ section.home {
 }
 
 .dishes .box-container .box img {
-  height: 17rem;
+  height: 20rem;
   margin: 1rem 0;
 }
 @media (max-width: 991px) {
