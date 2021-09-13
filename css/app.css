@@ -329,7 +329,7 @@ section.home {
   height: 20rem;
   margin: 1rem 0;
 }
-@media (max-width: 991px) {
+@media (max-width: 450px) {
   .dishes .box-container .box img {
     height: auto;
     width: 100%;
@@ -534,7 +534,7 @@ section.home {
 }
 
 .order form {
-  width: 90rem;
+  max-width: 90rem;
   border-radius: 0.5rem;
   box-shadow: var(--box-shadow);
   border: 1rem solid rgba(0, 0, 0, 0.2);
@@ -550,6 +550,11 @@ section.home {
 
 .order form .inputBox .input {
   width: 49%;
+}
+@media (max-width: 450px) {
+  .order form .inputBox .input {
+    width: 100%;
+  }
 }
 .order form .inputBox .input span {
   display: block;
@@ -568,6 +573,11 @@ section.home {
   text-transform: none;
   margin-bottom: 1rem;
   width: 100%;
+}
+
+.order form .inputBox .input input:focus,
+.order form .inputBox .input textarea:focus {
+  border: 0.1rem solid var(--green);
 }
 .order form .inputBox .input textarea {
   height: 20rem;
